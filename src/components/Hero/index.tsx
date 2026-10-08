@@ -15,8 +15,8 @@ const Hero = () => {
                   Grow your brand with Brandsearch
                 </h1>
                 <p className="mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
-                Transform your online presence with BrandSearch's powerful platform. 
-                Our advanced search technology connects your brand with the right audience, helping you build recognition and drive meaningful engagement in today's digital landscape.
+                Transform your online presence with BrandSearch&apos;s powerful platform. 
+                Our advanced search technology connects your brand with the right audience, helping you build recognition and drive meaningful engagement in today&apos;s digital landscape.
                 </p>
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                   <Link

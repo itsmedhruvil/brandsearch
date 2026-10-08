@@ -77,7 +77,7 @@ export function getPopularTags(limit = 20): string[] {
   for (const brand of seed) {
     for (const tag of brand.tags) counts.set(tag, (counts.get(tag) ?? 0) + 1);
   }
-  return [...counts.entries()]
+  return Array.from(counts.entries())
     .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
     .slice(0, limit)
     .map(([tag]) => tag);

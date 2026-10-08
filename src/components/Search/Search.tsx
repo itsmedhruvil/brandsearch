@@ -82,10 +82,10 @@ const ReadyToHelp: React.FC = () => {
         <section className="bg-slate-50 py-16 px-6">
             <div className="max-w-3xl mx-auto text-center">
                 <h2 className="text-4xl font-bold text-slate-900 mb-4">
-                    We're Ready to Help
+                    We&apos;re Ready to Help
                 </h2>
                 <p className="text-lg text-slate-600 mb-12">
-                    Search through our brand directory to find exactly what you're looking for.
+                    Search through our brand directory to find exactly what you&apos;re looking for.
                     Need inspiration? Check out our popular searches below.
                 </p>
 
