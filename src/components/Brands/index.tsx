@@ -1,11 +1,28 @@
-import { Brand } from "@/types/brand";
+import Link from "next/link";
 import Image from "next/image";
+import { BrandLogo } from "@/types/brand";
 import brandsData from "./brandsData";
 
 const Brands = () => {
   return (
     <section className="pt-16">
       <div className="container">
+        <div className="mb-10 text-center">
+          <h2 className="mb-3 text-2xl font-bold text-dark dark:text-white sm:text-3xl">
+            Explore the brand directory
+          </h2>
+          <p className="mx-auto mb-6 max-w-[560px] text-body-color dark:text-body-color-dark">
+            Logos, brand colours, industries and company facts for the
+            world&apos;s most recognisable brands - searchable and filterable.
+          </p>
+          <Link
+            href="/brands"
+            className="inline-flex items-center justify-center rounded-sm bg-primary px-8 py-3 text-base font-medium text-white transition hover:bg-opacity-90"
+          >
+            Browse all brands
+          </Link>
+        </div>
+
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4">
             <div className="flex flex-wrap items-center justify-center rounded-sm bg-gray-light px-8 py-8 dark:bg-gray-dark sm:px-10 md:px-[50px] md:py-[40px] xl:p-[50px] 2xl:px-[70px] 2xl:py-[60px]">
@@ -22,7 +39,7 @@ const Brands = () => {
 
 export default Brands;
 
-const SingleBrand = ({ brand }: { brand: Brand }) => {
+const SingleBrand = ({ brand }: { brand: BrandLogo }) => {
   const { href, image, imageLight, name } = brand;
 
   return (
